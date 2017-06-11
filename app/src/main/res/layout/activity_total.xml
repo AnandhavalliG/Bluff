@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/layoutHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                android:orientation="horizontal"
+                android:weightSum="100">
+
+                <TextView
+                    android:id="@+id/tvHeaderDetails"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="33"
+                    android:gravity="center"
+                    android:text="Player Name"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvHeaderScore"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="33"
+                    android:gravity="center"
+                    android:text="Current Round Score"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/tvHeaderTotal"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="33"
+                    android:gravity="center"
+                    android:text="Total Score"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutPlayer1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="100">
+
+                <TextView
+                    android:id="@+id/tvDetails1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="33"
+                    android:text="" />
+
+                <EditText
+                    android:id="@+id/etScore1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="33"
+                    android:ems="10"
+                    android:hint="Player1"
+                    android:inputType="number"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tvTotal1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="33"
+                    android:gravity="center"
+                    android:text="0" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutPlayer2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="100">
+
+                <TextView
+                    android:id="@+id/tvDetails2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="33"
+                    android:text="" />
+
+                <EditText
+                    android:id="@+id/etScore2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="33"
+                    android:ems="10"
+                    android:hint="Player2"
+                    android:inputType="number"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tvTotal2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="33"
+                    android:gravity="center"
+                    android:text="0" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutPlayer3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="100">
+
+                <TextView
+                    android:id="@+id/tvDetails3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="33"
+                    android:text="" />
+
+                <EditText
+                    android:id="@+id/etScore3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="33"
+                    android:ems="10"
+                    android:hint="Player3"
+                    android:inputType="number"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tvTotal3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="33"
+                    android:gravity="center"
+                    android:text="0" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutPlayer4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="100">
+
+                <TextView
+                    android:id="@+id/tvDetails4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="33"
+                    android:text="" />
+
+                <EditText
+                    android:id="@+id/etScore4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="33"
+                    android:ems="10"
+                    android:hint="Player4"
+                    android:inputType="number"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tvTotal4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="33"
+                    android:gravity="center"
+                    android:text="0" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layoutPlayer5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="100">
+
+                <TextView
+                    android:id="@+id/tvDetails5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="33"
+                    android:text="" />
+
+                <EditText
+                    android:id="@+id/etScore5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="33"
+                    android:ems="10"
+                    android:hint="Player5"
+                    android:inputType="number"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tvTotal5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="33"
+                    android:gravity="center"
+                    android:text="0" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal"
+                android:weightSum="100">
+
+                <Button
+                    android:id="@+id/btUpdate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:text="Update" />
+
+                <Button
+                    android:id="@+id/btRestart"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="50"
+                    android:text="Restart" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>
