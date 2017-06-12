@@ -1,5 +1,7 @@
 package com.anandhavalli.bluff;
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -147,8 +149,24 @@ public class TotalActivity extends AppCompatActivity {
 
     @OnClick(R.id.btRestart)
     public void restartAction() {
-        startActivity(new Intent(TotalActivity.this, MainActivity.class));
-        finish();
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setTitle(R.string.app_name);
+        builder.setMessage("Do you want to restart?");
+        builder.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                dialog.dismiss();
+                startActivity(new Intent(TotalActivity.this, MainActivity.class));
+                finish();
+            }
+        });
+        builder.setNegativeButton("No", new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                dialog.dismiss();
+            }
+        });
+        builder.create().show();
     }
 
     @OnClick(R.id.btUpdate)
