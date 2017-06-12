@@ -1,4 +1,4 @@
-package com.example.anandhavalli.bluf;
+package com.anandhavalli.bluff;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;

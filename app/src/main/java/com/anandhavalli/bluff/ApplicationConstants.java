@@ -1,4 +1,4 @@
-package com.example.anandhavalli.bluf;
+package com.anandhavalli.bluff;
 
 public class ApplicationConstants {
 

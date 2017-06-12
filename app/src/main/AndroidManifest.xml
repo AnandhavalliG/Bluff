@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.anandhavalli.bluf">
+    package="com.anandhavalli.bluff">
 
     <application
         android:allowBackup="true"
@@ -20,7 +20,8 @@
         <activity
             android:name=".PlayerActivity"
             android:screenOrientation="portrait" />
-        <activity android:name=".TotalActivity"
+        <activity
+            android:name=".TotalActivity"
             android:screenOrientation="portrait" />
     </application>
 

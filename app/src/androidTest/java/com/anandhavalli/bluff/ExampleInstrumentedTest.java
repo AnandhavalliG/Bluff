@@ -1,4 +1,4 @@
-package com.example.anandhavalli.bluf;
+package com.anandhavalli.bluff;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
