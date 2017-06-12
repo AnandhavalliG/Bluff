@@ -75,19 +75,19 @@ public class PlayerActivity extends AppCompatActivity {
         playerNameArray = new String[numberOfPlayers];
 
         if (numberOfPlayers == 4) {
-            name5.setVisibility(View.INVISIBLE);
+            name5.setVisibility(View.GONE);
         }else if (numberOfPlayers == 3){
-            name5.setVisibility(View.INVISIBLE);
-            name4.setVisibility(View.INVISIBLE);
+            name5.setVisibility(View.GONE);
+            name4.setVisibility(View.GONE);
         }else if (numberOfPlayers == 2){
-            name5.setVisibility(View.INVISIBLE);
-            name4.setVisibility(View.INVISIBLE);
-            name3.setVisibility(View.INVISIBLE);
+            name5.setVisibility(View.GONE);
+            name4.setVisibility(View.GONE);
+            name3.setVisibility(View.GONE);
         }else if (numberOfPlayers == 1){
-            name5.setVisibility(View.INVISIBLE);
-            name4.setVisibility(View.INVISIBLE);
-            name3.setVisibility(View.INVISIBLE);
-            name2.setVisibility(View.INVISIBLE);
+            name5.setVisibility(View.GONE);
+            name4.setVisibility(View.GONE);
+            name3.setVisibility(View.GONE);
+            name2.setVisibility(View.GONE);
         }
     }
 }
