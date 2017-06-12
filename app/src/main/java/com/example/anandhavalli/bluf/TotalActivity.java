@@ -87,7 +87,7 @@ public class TotalActivity extends AppCompatActivity {
         int index = 0;
         int playerIndex = 0;
         if (playerNameArray.length == 4) {
-            layoutPlayer5.setVisibility(View.INVISIBLE);
+            layoutPlayer5.setVisibility(View.GONE);
             detail1.setText(playerNameArray[index++]);
             detail2.setText(playerNameArray[index++]);
             detail3.setText(playerNameArray[index++]);
@@ -98,8 +98,8 @@ public class TotalActivity extends AppCompatActivity {
             score3.setHint(playerNameArray[playerIndex++] + " Score");
             score4.setHint(playerNameArray[playerIndex++] + " Score");
         } else if (playerNameArray.length == 3) {
-            layoutPlayer5.setVisibility(View.INVISIBLE);
-            layoutPlayer4.setVisibility(View.INVISIBLE);
+            layoutPlayer5.setVisibility(View.GONE);
+            layoutPlayer4.setVisibility(View.GONE);
             detail1.setText(playerNameArray[index++]);
             detail2.setText(playerNameArray[index++]);
             detail3.setText(playerNameArray[index++]);
@@ -108,19 +108,19 @@ public class TotalActivity extends AppCompatActivity {
             score2.setHint(playerNameArray[playerIndex++] + " Score");
             score3.setHint(playerNameArray[playerIndex++] + " Score");
         } else if (playerNameArray.length == 2) {
-            layoutPlayer5.setVisibility(View.INVISIBLE);
-            layoutPlayer4.setVisibility(View.INVISIBLE);
-            layoutPlayer3.setVisibility(View.INVISIBLE);
+            layoutPlayer5.setVisibility(View.GONE);
+            layoutPlayer4.setVisibility(View.GONE);
+            layoutPlayer3.setVisibility(View.GONE);
             detail1.setText(playerNameArray[index++]);
             detail2.setText(playerNameArray[index++]);
 
             score1.setHint(playerNameArray[playerIndex++] + " Score");
             score2.setHint(playerNameArray[playerIndex++] + " Score");
         } else if (playerNameArray.length == 1) {
-            layoutPlayer5.setVisibility(View.INVISIBLE);
-            layoutPlayer4.setVisibility(View.INVISIBLE);
-            layoutPlayer3.setVisibility(View.INVISIBLE);
-            layoutPlayer2.setVisibility(View.INVISIBLE);
+            layoutPlayer5.setVisibility(View.GONE);
+            layoutPlayer4.setVisibility(View.GONE);
+            layoutPlayer3.setVisibility(View.GONE);
+            layoutPlayer2.setVisibility(View.GONE);
             detail1.setText(playerNameArray[index++]);
 
             score1.setHint(playerNameArray[playerIndex++] + " Score");
