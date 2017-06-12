@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.EditText;
 import android.widget.TextView;
 
@@ -81,6 +82,11 @@ public class TotalActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_total);
         ButterKnife.bind(this);
+        setupViews();
+        hideSoftKeyboard();
+    }
+
+    private void setupViews() {
         Bundle b = this.getIntent().getExtras();
         playerNameArray = b.getStringArray(ApplicationConstants.PLAYER_NAME_ARRAY);
         Log.i("TA.oC.playerNameArray", String.valueOf(playerNameArray.length));
@@ -183,8 +189,10 @@ public class TotalActivity extends AppCompatActivity {
             score4.setText("");
             score5.setText("");
         }
-
         score1.requestFocus();
     }
 
+    public void hideSoftKeyboard() {
+        getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_HIDDEN);
+    }
 }

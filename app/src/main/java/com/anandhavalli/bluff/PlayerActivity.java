@@ -5,6 +5,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.EditText;
 
 import butterknife.BindView;
@@ -69,6 +70,7 @@ public class PlayerActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_player);
         ButterKnife.bind(this);
+        hideSoftKeyboard();
 
         numberOfPlayers = getIntent().getIntExtra(ApplicationConstants.NUMBER_OF_PLAYERS, 0);
         Log.i("PA.oC.numberOfPlayers", String.valueOf(numberOfPlayers));
@@ -90,7 +92,8 @@ public class PlayerActivity extends AppCompatActivity {
             name2.setVisibility(View.GONE);
         }
     }
+
+    public void hideSoftKeyboard() {
+        getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_HIDDEN);
+    }
 }
-
-
-
